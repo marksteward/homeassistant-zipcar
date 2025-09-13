@@ -1,0 +1,8 @@
+- sensor:
+    name: nearest_zipcar_flex
+    command: "python command_line/scrape-nearest-zipcars.py"
+    value_template: "{{ value_json.nearest_flex_mins }}"
+    unit_of_measurement: min
+    scan_interval: 300
+    unique_id: nearest_zipcar_flex_v1
+
